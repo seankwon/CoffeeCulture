@@ -1,0 +1,621 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    line-height: 1.4;
+    background:#fff;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 3px;
+    color:black;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+    max-width:100%;
+    height:auto;
+    width: auto\9; /* ie8 */
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+#first {
+    background:url(../img/test.jpg) 60% 0 repeat fixed;
+    max-width:100%;
+}
+
+#first .title {
+    background: url(../img/title.png) 50% 100px no-repeat fixed; 
+    min-height: 1000px; 
+    padding: 0; 
+    margin: 0; 
+    max-width:100%;
+    width: 100%; 
+    position: relative; 
+    margin: 0 auto;
+}
+
+#first article { 
+    width: 100%; 
+    top: 400px; 
+    position: absolute; 
+    text-align: center; 
+}
+
+
+#second {
+    background:url(../img/kindajean.png) repeat #333;
+    padding: 50px 0;
+}
+
+#second article {
+    background:url(../img/kindajean.png) repeat #333; 
+    color: #000;
+    width:34%;
+    max-width:100%;
+    margin:0 auto;
+    padding:0px 20px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+    line-height: 1.5em;
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    border: 3px solid rgba(150,150,150,0.1);
+    box-shadow:inset solid rgba(150,150,150,0.1);
+    max-height:100%;
+    text-align:center;
+}
+
+#second article hr {
+    color:#fff;
+    height:2px;
+}
+
+#second article p{
+    margin-bottom:15px;
+    font-size:100%;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-style:italic;
+}
+
+#second article h1{
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+#third {
+    background:url(../img/backgroundtwo.jpg) 50% 0 no-repeat fixed;
+    padding: 200px 0; 
+}
+
+#third article{
+    background:url(../img/kindajean.png) repeat #333; 
+    color: #000;
+    width:30%;
+    max-width:100%;
+    margin-left:60%;
+    padding:10px 20px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+    line-height: 1.5em;
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    border: 1px solid rgba(150,150,150,0.1);
+}
+
+#third article p{
+    margin-bottom: 25px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+#third article h2 {
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+#fourth {
+    background:url(../img/backgroundthree.jpg) 50% 0 no-repeat fixed;
+    margin-top:0;
+    padding: 300px 0;
+}
+
+#fourth article{
+    background:url(../img/kindajean.png) repeat #333;
+    color: #000;
+    width:30%;
+    max-width:100%;
+    margin-left:60%;
+    padding:10px 20px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+    line-height: 1.5em;
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    border: 1px solid rgba(150,150,150,0.1);
+}
+
+#fourth article p{
+    margin-bottom: 25px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+#fourth article h2 {
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+#fifth {
+    background:url(../img/backgroundfour.jpg) 50% 0 no-repeat fixed;
+    margin-top:0;
+    padding: 300px 0;
+}
+
+#fifth article{
+    background:url(../img/kindajean.png) repeat #333;
+    color: #000;
+    width:30%;
+    max-width:100%;
+    margin-left:60%;
+    padding:10px 20px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+    line-height: 1.5em;
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    border: 1px solid rgba(150,150,150,0.1);
+}
+
+#fifth article p{
+    margin-bottom: 25px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+#fifth article h2 {
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+#sixth {
+    background:url(../img/backgroundfive.jpg) 50% 0 no-repeat fixed;
+    margin-top:0;
+    padding: 200px 0;
+}
+
+#sixth article{
+    background:url(../img/kindajean.png) repeat #333;
+    color: #000;
+    width:30%;
+    max-width:100%;
+    margin-left:60%;
+    padding:10px 20px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+    line-height: 1.5em;
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    border: 1px solid rgba(150,150,150,0.1);
+}
+
+#sixth article p{
+    margin-bottom: 25px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size:1.0em;
+}
+
+#sixth article h2 {
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.main_body {
+    background:url(../img/kindajean.png) repeat #333;
+    width:100%;
+    height:100%;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+    padding-top:30px;
+    padding-bottom:20px;
+}
+
+
+.image {
+    width:50%;
+    margin-left:10%;
+    max-width:100%;
+    text-align:center;
+    color:grey;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+    font-size:1em;
+}
+
+.main_body h1 {
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+    width:50%;
+    margin-left:10%;
+}
+
+.main_body hr{
+    color:#fff;
+    height:1px;
+    width:50%;
+    margin-left:10%;
+}
+
+.main_body p{
+    margin-left:10%;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    width:50%;
+    font-size:1.5em;
+}
+
+#theater {
+    background:url(../img/kindajean.png) repeat #333;
+    margin:0 auto;
+    text-align:center;
+    max-width:100%;
+    padding-top:30px;
+}
+
+#theater hr {
+    width:50%;
+    margin:0 auto;
+}
+
+#theater h1{
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+}
+
+
+.spacer {
+    height:100px;
+    background:url(../img/kindajean.png) repeat #333;
+}
+
+.pop_theater {
+    margin:0 auto;
+    max-width:100%;
+    height:600px;
+    background:url(../img/back.png) repeat #333;
+}
+
+.Button {
+    margin-top:20px;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #bddbfa), color-stop(1, #80b5ea) );
+	background:-moz-linear-gradient( center top, #bddbfa 5%, #80b5ea 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bddbfa', endColorstr='#80b5ea');
+	background-color:#bddbfa;
+	border:6px solid #84bbf3;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:16px;
+	font-weight:bold;
+	padding:10px 58px;
+	text-decoration:none;
+	text-shadow:1px 3px 0px #528ecc;
+}.Button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #80b5ea), color-stop(1, #bddbfa) );
+	background:-moz-linear-gradient( center top, #80b5ea 5%, #bddbfa 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80b5ea', endColorstr='#bddbfa');
+	background-color:#80b5ea;
+}.Button:active {
+	position:relative;
+	top:1px;
+}
+#pop_vid{
+margin:0 auto;
+}
+/* This imageless css button was generated by CSSButtonGenerator.com */
+
+#footnote{
+position:absolute;
+font-size:30px;
+}
+
+.slideout-left {
+	z-index: 2;
+  position: fixed;
+	width: 35%;
+	max-width: 360px;
+	min-width: 100px;
+	background-color: #333366;
+	box-shadow: 2px 2px 2px #000;
+	border-bottom-right-radius: 30px 30px;
+	-moz-border-radius-bottomright: 30px 30px;
+	margin: 0;
+	padding: 15px;
+	top: -50px;
+	left: 0px;
+	opacity: 0;
+	-moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+#espresso{
+    margin-left:10%;
+}
+
+#specialty {
+    margin-left:10%;
+}
+
+
+body {
+  font-size: 81.25%;
+}
+
+@media screen and (min-width: 68em) and (min-height: 53em) {
+  body {
+    font-size: 87.5%;
+  }
+}
+
+@media screen and (min-width: 75em) and (min-height: 57em) {
+  body {
+    font-size: 93.75%;
+  }
+}
+
+@media screen and (min-width: 80em) and (min-height: 62em) {
+  body {
+    font-size: 100%;
+  }
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
